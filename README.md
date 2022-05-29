@@ -2,7 +2,7 @@
 
 ## Technologies Used
 
-- Reactjs
+- React js
 - Styled-components
 - Cloudflare
 
@@ -14,3 +14,13 @@ You can move the balloons to the box by clicking on the box.
 </p>
 
 [Website URL](https://syngenta-frontend-assignment.pages.dev/)
+
+## How to run locally
+
+- Install nodejs
+- Clone the repository
+- run npm install
+- run npm start
+- Enter the number of balloon you want to shoot
+- Click on the balloon
+- Enjoy
