@@ -53,6 +53,8 @@ function App() {
 			...boxActiveBalloon,
 			[ballonNo]: 'active',
 		});
+		// Resetting input field
+		setBalloonNumber('');
 	};
 	// To handle change in input field
 	const handleChange = (event) => {
@@ -102,6 +104,13 @@ function App() {
 	return (
 		<>
 			<div className='container'>
+				<div>
+					<p>
+						This is a balloon game. Enter a number between 1 and 5 and click on
+						shoot and balloon will move from outside to inside box. To again
+						move the balloon click on the balloon in box area.
+					</p>
+				</div>
 				<div>
 					<div className='box'>
 						<div onClick={handleBoxBallonClick}>
@@ -183,7 +192,9 @@ function App() {
 						id='balloon-number'
 						placeholder='Enter Balloon Number to Shoot'
 					/>
-					<button onClick={handleShoot}>Shoot</button>
+					<button className='shoot-button' onClick={handleShoot}>
+						Shoot
+					</button>
 				</div>
 			</div>
 		</>
